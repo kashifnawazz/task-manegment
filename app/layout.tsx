@@ -2,6 +2,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Navbar } from '@/components/navbar'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,12 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-        <div className="bg-indigo-500 text-3xl">  Header</div>
-        <div className="h-full bg-slate-100">
+        <Navbar/>
+      <main>
       {children}
-      </div>
-      </ThemeProvider>
+      </main>
+    
+      
       </body>
 
     </html>
