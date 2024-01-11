@@ -18,13 +18,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    
+      <html>
+        <body>
       <div>
        
       <main>
       {children}
       </main>
       </div>
+      </body>
+      </html>
+      
     
   )
 }
