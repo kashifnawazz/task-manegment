@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 import  Link from "next/link";
 
-import SignUpPage from "@/app/signup/page";
+import SignUpPage from "@/app/(views)/signup/page";
 
  export const Navbar = () => {
     return (

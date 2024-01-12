@@ -1,20 +1,14 @@
 'use client'
-//This is also root page
-import { Provider } from "react-redux";
-import { store } from "../store";
-import { Button } from "@/components/ui/button";
-import Counter from "../counterTest";
 
-import Link from "next/link";
+import LoginComponent from "@/components/client-components/login-component";
+import { Input } from "@/components/ui/input";
 
 const MainLandingPage = () => {
     return (
         <div> 
-            Hello world
-            <Counter></Counter>
-
-      
-        
+           <div className="h-auto w-800 flex-col items-center" >
+           <LoginComponent></LoginComponent>
+           </div>
         </div>
 
         
