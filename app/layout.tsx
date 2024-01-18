@@ -20,12 +20,11 @@ export default function RootLayout({
   return (
       <html>
         <body>
-      <div>
-       
-      <main>
+      
+     
       {children}
-      </main>
-      </div>
+     
+   
       </body>
       </html>
       

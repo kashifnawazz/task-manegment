@@ -1,4 +1,3 @@
-//This Navbar for lnading Page. 
 
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
@@ -7,7 +6,7 @@ import  Link from "next/link";
 
 //import SignUpPage from "@/app/(views)/signup/page";
 
- export const Navbar = () => {
+ export const DashBoardNavbar = () => {
     return (
       
         <div className="flex-auto w-full h-16 bg-[#5C87B2] flex items-center"> 
@@ -16,15 +15,12 @@ import  Link from "next/link";
             </div>
             
             <div>
-                <Button>Login</Button>
+                <Button>Logout</Button>
             </div>
 
-            <div className="mx-16">
-                <Button>Sign up</Button>
-            </div>
+        
             
             </div>
     );
 
 };
-
